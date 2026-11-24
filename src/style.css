@@ -1,1 +1,100 @@
-@import "tailwindcss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5faff;
+  color: #263b50;
+}
+
+nav {
+  background: #3688d8;
+  color: white;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h2 {
+  font-size: 23px;
+}
+
+nav div {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #d6ecff;
+}
+
+.container {
+  text-align: center;
+  padding: 120px 20px;
+  min-height: 75vh;
+}
+
+.blue {
+  color: #3688d8;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 38px;
+  color: #245b91;
+  margin-bottom: 20px;
+}
+
+.container p {
+  line-height: 1.8;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 25px;
+  background: #3688d8;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #246bb5;
+}
+
+footer {
+  background: #e4f1ff;
+  color: #52718f;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav div {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}
